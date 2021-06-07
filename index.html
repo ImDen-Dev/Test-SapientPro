@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>Company name</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header
+      class="
+        header
+        d-flex
+        flex-nowrap
+        align-items-center
+        border-bottom
+        py-1 py-md-2 py-lg-3
+      "
+    >
+      <div
+        class="
+          container
+          d-flex
+          flex-nowrap
+          align-items-center
+          justify-content-between
+        "
+      >
+        <!-- logo start -->
+        <a
+          href="#"
+          class="header_logo logo d-flex flex-nowrap text-decoration-none"
+        >
+          <p class="logo_name d-none d-xl-block mb-0 me-1">Company</p>
+          <span class="logo_icon">Logo</span>
+        </a>
+        <!-- logo end -->
+
+        <!-- links start -->
+        <div class="header_links links align-items-center d-none d-md-flex">
+          <a href="#" class="links_item text-decoration-none me-3 me-lg-5">
+            For clubs / associations
+          </a>
+          <a href="#" class="links_item text-decoration-none">For companies</a>
+        </div>
+        <!-- links end -->
+
+        <!-- actions start -->
+        <div
+          class="header_actions actions d-flex flex-nowrap align-items-center"
+        >
+          <button
+            class="actions_btn btn me-5 d-none d-md-inline-block btn-blue"
+          >
+            Try it for free
+          </button>
+          <a href="#" class="actions_basket text-decoration-none">
+            <img
+              src="./images/ellipse.png"
+              alt="ellipse"
+              class="actions_basket-dot"
+            />
+            <span class="actions_basket-icon material-icons-outlined md-20">
+              shopping_cart
+            </span>
+          </a>
+          <div
+            class="
+              actions_burger
+              d-flex
+              align-items-center
+              justify-content-center
+              h-100
+              ms-3
+              d-md-none
+            "
+          >
+            <span class="actions_burger-icon material-icons-outlined">
+              menu
+            </span>
+          </div>
+        </div>
+        <!-- actions end -->
+      </div>
+    </header>
+    <!-- header end -->
+
+    <main class="mt-4">
+      <!-- Tabs start -->
+      <div class="container">
+        <div
+          class="
+            tabs
+            border-bottom
+            d-flex
+            align-items-start
+            justify-content-center
+          "
+        >
+          <a
+            href="#"
+            class="
+              tabs_link
+              d-flex
+              flex-nowrap
+              align-items-center
+              justify-content-center
+              text-decoration-none
+              active
+            "
+          >
+            <span class="material-icons-outlined md-26"> cloud </span>
+            <p class="tabs_link-text mb-0 ms-3">Cloud</p>
+          </a>
+          <a
+            href="#"
+            class="
+              tabs_link
+              d-flex
+              align-items-center
+              justify-content-center
+              text-decoration-none
+              ms-5
+            "
+          >
+            <span class="material-icons-outlined md-24"> dns </span>
+            <p class="tabs_link-text mb-0 ms-3">Self-managed</p>
+          </a>
+        </div>
+      </div>
+      <!-- Tabs end -->
+
+      <!-- Form start -->
+      <section>
+        <div class="container mt-4 mb-5">
+          <div class="row">
+            <div class="col-lg-8 col-12 border-bottom border-res">
+              <div class="container-md">
+                <div class="row pt-4">
+                  <div class="col-md-6 col-12 text-center text-md-start">
+                    <!-- checker start -->
+                    <div
+                      class="btn-group period align-items-center"
+                      role="group"
+                    >
+                      <input
+                        type="radio"
+                        class="btn-check period-check"
+                        name="btnradio"
+                        id="monthly"
+                        checked
+                      />
+                      <label class="btn py-0 period_btn" for="monthly"
+                        >Monthly</label
+                      >
+
+                      <input
+                        type="radio"
+                        class="btn-check period-check"
+                        name="btnradio"
+                        id="annual"
+                      />
+                      <label class="btn py-0 period_btn" for="annual"
+                        >Annual</label
+                      >
+                    </div>
+                    <!-- checker end -->
+                  </div>
+                  <div class="col-md-6 col-12 mt-4 mt-md-0">
+                    <div class="mb-3 mb-sm-0 row">
+                      <label
+                        for="inputNum"
+                        class="
+                          d-flex
+                          align-items-center
+                          col-4 col-sm-3 col-form-label
+                          px-0
+                          users_count
+                        "
+                        >No. of users:</label
+                      >
+                      <div class="col-8 col-sm-9 px-0">
+                        <input
+                          type="number"
+                          class="form-control users_count-input"
+                          id="inputNum"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row d-none d-md-block mt-5 mb-5">
+                  <div class="col-12">
+                    <ul class="range-labels">
+                      <li>1 user</li>
+                      <li>150</li>
+                      <li>600</li>
+                      <li>1k</li>
+                      <li>1.5k</li>
+                      <li>2.5k</li>
+                      <li>5k</li>
+                      <li>10k</li>
+                      <li>20k</li>
+                    </ul>
+                    <div class="range">
+                      <input
+                        type="range"
+                        name="count"
+                        id="usersCount"
+                        min="1"
+                        max="20000"
+                        step="5"
+                        class="w-100"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-5 mb-4">
+                  <p class="note text-center p-0 m-0">
+                    Pricing starts at $7 per user for the first 100 users.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-12 border-bottom">
+              <div class="container mt-4 mb-3 text-center">
+                <div class="row align-items-center">
+                  <div
+                    class="
+                      col-12 col-md-4 col-lg-12
+                      mb-3 mb-md-0
+                      px-0
+                      text-center text-md-start
+                      monthly_pricing
+                    "
+                  >
+                    <h6
+                      class="
+                        count_header
+                        text-center text-md-start text-lg-center
+                      "
+                    >
+                      monthly pricing summary:
+                    </h6>
+                    <div class="count_subtext d-lg-none">
+                      <p class="count_subtext-text mb-1">
+                        Avg. <span class="count_subtext-price">$5.07</span> /
+                        user / mo.
+                      </p>
+                      <p class="count_subtext-text mb-0">For 5,000 users</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-12 mb-3 mb-md-0">
+                    <p class="count_sum mb-0 mb-lg-2">
+                      $13,400 <span>/ mo.</span>
+                    </p>
+                    <div class="count_subtext d-none d-lg-block mb-3">
+                      <p
+                        class="
+                          count_subtext-text
+                          mb-1
+                          pe-2
+                          d-inline-block
+                          border-end
+                        "
+                      >
+                        Avg. <span class="count_subtext-price">$5.07</span> /
+                        user / mo.
+                      </p>
+                      <p class="count_subtext-text ms-2 mb-0 d-inline-block">
+                        For 5,000 users
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-12">
+                    <button
+                      type="button"
+                      class="
+                        btn btn-blue
+                        count_btn
+                        mx-auto
+                        d-flex
+                        align-items-center
+                        py-2
+                      "
+                    >
+                      <span
+                        class="material-icons-outlined count_btn-icon md-16"
+                      >
+                        keyboard_capslock
+                      </span>
+                      <span class="count_btn-text mb-0">Check offers</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Form end -->
+      <!-- section services start -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <h3 class="services_title">
+                Kameon Pro Modules, Member Self-Service & Mobile App:
+              </h3>
+              <div class="services">
+                <span class="services_list-title pb-2 d-block border-bottom"
+                  >Title</span
+                >
+                <div
+                  class="
+                    services_item
+                    scard scard_disabled
+                    py-4
+                    d-flex
+                    border-bottom
+                  "
+                >
+                  <div class="scard_img">
+                    <svg
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="hexagon_color"
+                        d="M50.4654 0.00146484C48.2305 0.00146484 46.4121 1.81989 46.4121 4.0548C46.4121 6.2897 48.2305 8.10813 50.4654 8.10813C52.7003 8.10813 54.5188 6.2897 54.5188 4.0548C54.5188 1.81989 52.7003 0.00146484 50.4654 0.00146484ZM50.4654 6.08146C49.3477 6.08146 48.4388 5.1725 48.4388 4.0548C48.4388 2.93709 49.3477 2.02813 50.4654 2.02813C51.5831 2.02813 52.4921 2.93709 52.4921 4.0548C52.4921 5.1725 51.5831 6.08146 50.4654 6.08146Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M35.7726 3.68216C36.4062 3.68216 36.9202 3.1684 36.9202 2.53481C36.9202 1.90097 36.4064 1.38721 35.7726 1.38721C35.1388 1.38721 34.625 1.90097 34.625 2.53481C34.6253 3.1684 35.139 3.68216 35.7726 3.68216Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M56.0392 16.5874C55.4056 16.5874 54.8916 17.1012 54.8916 17.735C54.8916 18.3686 55.4054 18.8824 56.0392 18.8824C56.673 18.8824 57.1868 18.3686 57.1868 17.735C57.1868 17.1012 56.673 16.5874 56.0392 16.5874Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M24.0435 25.6958L19.9131 28.1741V33.1306L24.0435 35.6088L28.174 33.1306V28.1741L24.0435 25.6958Z"
+                      />
+                      <path
+                        d="M46.9212 16.3519L24.6279 3.41569C24.3132 3.23253 23.9254 3.23253 23.6105 3.41569L1.31714 16.3519C1.00503 16.533 0.8125 16.8669 0.8125 17.2282V43.5749C0.8125 43.9305 0.998953 44.2601 1.30346 44.4433L23.5968 57.8537C23.7577 57.9503 23.9388 57.9986 24.1192 57.9986C24.2995 57.9986 24.4809 57.9503 24.6415 57.8537L46.9349 44.4433C47.2391 44.2601 47.4258 43.9308 47.4258 43.5749V17.2282C47.4258 16.8669 47.2333 16.533 46.9212 16.3519ZM24.1192 5.46364L44.4074 17.236L30.9934 25.1626L25.1325 21.7155V16.2149C25.1325 15.6552 24.6788 15.2015 24.1192 15.2015C23.5596 15.2015 23.1058 15.6552 23.1058 16.2149V21.7155L16.5123 25.5938C16.2025 25.7759 16.0125 26.1078 16.0125 26.467V34.0151L2.83917 41.7992V17.8116L24.1192 5.46364ZM24.1192 37.8067L18.0392 34.2314V27.0466L24.1192 23.4708L30.1992 27.0466V34.2314L24.1192 37.8067ZM24.1192 55.8028L3.80462 43.5827L16.8429 35.8783L23.1061 39.5616V44.5882C23.1061 45.1478 23.5598 45.6015 24.1194 45.6015C24.679 45.6015 25.1328 45.1478 25.1328 44.5882V39.5616L31.7263 35.6838C32.0361 35.5016 32.2261 35.1698 32.2261 34.8105V26.7882L45.3994 19.0038V43.0018L24.1192 55.8028Z"
+                        fill="#E4EAEC"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="
+                      scard_wrapper
+                      ms-5
+                      w-100
+                      d-md-flex
+                      justify-content-between
+                    "
+                  >
+                    <div class="scard_body">
+                      <div class="scard_title mb-2">Member Self-Service</div>
+                      <p class="scard_text pe-md-4">
+                        Aute enim officia exercitation fugiat ipsum Lorem aute
+                        proident proident do dolor occaecat
+                      </p>
+                    </div>
+                    <div class="scard_footer d-flex align-items-center">
+                      <p class="scard_price m-0">$5,315 <span>/ mo.</span></p>
+                      <div class="scard_add ms-4">
+                        <input type="checkbox" />
+                        <div class="scard_add-img"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services_item scard py-4 d-flex border-bottom">
+                  <div class="scard_img">
+                    <svg
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="hexagon_color"
+                        d="M50.4654 0.00146484C48.2305 0.00146484 46.4121 1.81989 46.4121 4.0548C46.4121 6.2897 48.2305 8.10813 50.4654 8.10813C52.7003 8.10813 54.5188 6.2897 54.5188 4.0548C54.5188 1.81989 52.7003 0.00146484 50.4654 0.00146484ZM50.4654 6.08146C49.3477 6.08146 48.4388 5.1725 48.4388 4.0548C48.4388 2.93709 49.3477 2.02813 50.4654 2.02813C51.5831 2.02813 52.4921 2.93709 52.4921 4.0548C52.4921 5.1725 51.5831 6.08146 50.4654 6.08146Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M35.7726 3.68216C36.4062 3.68216 36.9202 3.1684 36.9202 2.53481C36.9202 1.90097 36.4064 1.38721 35.7726 1.38721C35.1388 1.38721 34.625 1.90097 34.625 2.53481C34.6253 3.1684 35.139 3.68216 35.7726 3.68216Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M56.0392 16.5874C55.4056 16.5874 54.8916 17.1012 54.8916 17.735C54.8916 18.3686 55.4054 18.8824 56.0392 18.8824C56.673 18.8824 57.1868 18.3686 57.1868 17.735C57.1868 17.1012 56.673 16.5874 56.0392 16.5874Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M24.0435 25.6958L19.9131 28.1741V33.1306L24.0435 35.6088L28.174 33.1306V28.1741L24.0435 25.6958Z"
+                      />
+                      <path
+                        d="M46.9212 16.3519L24.6279 3.41569C24.3132 3.23253 23.9254 3.23253 23.6105 3.41569L1.31714 16.3519C1.00503 16.533 0.8125 16.8669 0.8125 17.2282V43.5749C0.8125 43.9305 0.998953 44.2601 1.30346 44.4433L23.5968 57.8537C23.7577 57.9503 23.9388 57.9986 24.1192 57.9986C24.2995 57.9986 24.4809 57.9503 24.6415 57.8537L46.9349 44.4433C47.2391 44.2601 47.4258 43.9308 47.4258 43.5749V17.2282C47.4258 16.8669 47.2333 16.533 46.9212 16.3519ZM24.1192 5.46364L44.4074 17.236L30.9934 25.1626L25.1325 21.7155V16.2149C25.1325 15.6552 24.6788 15.2015 24.1192 15.2015C23.5596 15.2015 23.1058 15.6552 23.1058 16.2149V21.7155L16.5123 25.5938C16.2025 25.7759 16.0125 26.1078 16.0125 26.467V34.0151L2.83917 41.7992V17.8116L24.1192 5.46364ZM24.1192 37.8067L18.0392 34.2314V27.0466L24.1192 23.4708L30.1992 27.0466V34.2314L24.1192 37.8067ZM24.1192 55.8028L3.80462 43.5827L16.8429 35.8783L23.1061 39.5616V44.5882C23.1061 45.1478 23.5598 45.6015 24.1194 45.6015C24.679 45.6015 25.1328 45.1478 25.1328 44.5882V39.5616L31.7263 35.6838C32.0361 35.5016 32.2261 35.1698 32.2261 34.8105V26.7882L45.3994 19.0038V43.0018L24.1192 55.8028Z"
+                        fill="#E4EAEC"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="
+                      scard_wrapper
+                      ms-5
+                      w-100
+                      d-md-flex
+                      justify-content-between
+                    "
+                  >
+                    <div class="scard_body">
+                      <div class="scard_title mb-2">Member Self-Service</div>
+                      <p class="scard_text pe-md-4">
+                        Aute enim officia exercitation fugiat ipsum Lorem aute
+                        proident proident do dolor occaecat
+                      </p>
+                    </div>
+                    <div class="scard_footer d-flex align-items-center">
+                      <p class="scard_price m-0">$5,315 <span>/ mo.</span></p>
+                      <div class="scard_add ms-4">
+                        <input type="checkbox" />
+                        <div class="scard_add-img"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="services_item scard py-4 d-flex border-bottom">
+                  <div class="scard_img">
+                    <svg
+                      width="58"
+                      height="58"
+                      viewBox="0 0 58 58"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="hexagon_color"
+                        d="M50.4654 0.00146484C48.2305 0.00146484 46.4121 1.81989 46.4121 4.0548C46.4121 6.2897 48.2305 8.10813 50.4654 8.10813C52.7003 8.10813 54.5188 6.2897 54.5188 4.0548C54.5188 1.81989 52.7003 0.00146484 50.4654 0.00146484ZM50.4654 6.08146C49.3477 6.08146 48.4388 5.1725 48.4388 4.0548C48.4388 2.93709 49.3477 2.02813 50.4654 2.02813C51.5831 2.02813 52.4921 2.93709 52.4921 4.0548C52.4921 5.1725 51.5831 6.08146 50.4654 6.08146Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M35.7726 3.68216C36.4062 3.68216 36.9202 3.1684 36.9202 2.53481C36.9202 1.90097 36.4064 1.38721 35.7726 1.38721C35.1388 1.38721 34.625 1.90097 34.625 2.53481C34.6253 3.1684 35.139 3.68216 35.7726 3.68216Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M56.0392 16.5874C55.4056 16.5874 54.8916 17.1012 54.8916 17.735C54.8916 18.3686 55.4054 18.8824 56.0392 18.8824C56.673 18.8824 57.1868 18.3686 57.1868 17.735C57.1868 17.1012 56.673 16.5874 56.0392 16.5874Z"
+                      />
+                      <path
+                        class="hexagon_color"
+                        d="M24.0435 25.6958L19.9131 28.1741V33.1306L24.0435 35.6088L28.174 33.1306V28.1741L24.0435 25.6958Z"
+                      />
+                      <path
+                        d="M46.9212 16.3519L24.6279 3.41569C24.3132 3.23253 23.9254 3.23253 23.6105 3.41569L1.31714 16.3519C1.00503 16.533 0.8125 16.8669 0.8125 17.2282V43.5749C0.8125 43.9305 0.998953 44.2601 1.30346 44.4433L23.5968 57.8537C23.7577 57.9503 23.9388 57.9986 24.1192 57.9986C24.2995 57.9986 24.4809 57.9503 24.6415 57.8537L46.9349 44.4433C47.2391 44.2601 47.4258 43.9308 47.4258 43.5749V17.2282C47.4258 16.8669 47.2333 16.533 46.9212 16.3519ZM24.1192 5.46364L44.4074 17.236L30.9934 25.1626L25.1325 21.7155V16.2149C25.1325 15.6552 24.6788 15.2015 24.1192 15.2015C23.5596 15.2015 23.1058 15.6552 23.1058 16.2149V21.7155L16.5123 25.5938C16.2025 25.7759 16.0125 26.1078 16.0125 26.467V34.0151L2.83917 41.7992V17.8116L24.1192 5.46364ZM24.1192 37.8067L18.0392 34.2314V27.0466L24.1192 23.4708L30.1992 27.0466V34.2314L24.1192 37.8067ZM24.1192 55.8028L3.80462 43.5827L16.8429 35.8783L23.1061 39.5616V44.5882C23.1061 45.1478 23.5598 45.6015 24.1194 45.6015C24.679 45.6015 25.1328 45.1478 25.1328 44.5882V39.5616L31.7263 35.6838C32.0361 35.5016 32.2261 35.1698 32.2261 34.8105V26.7882L45.3994 19.0038V43.0018L24.1192 55.8028Z"
+                        fill="#E4EAEC"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="
+                      scard_wrapper
+                      ms-5
+                      w-100
+                      d-md-flex
+                      justify-content-between
+                    "
+                  >
+                    <div class="scard_body">
+                      <div class="scard_title mb-2">Member Self-Service</div>
+                      <p class="scard_text pe-md-4">
+                        Aute enim officia exercitation fugiat ipsum Lorem aute
+                        proident proident do dolor occaecat
+                      </p>
+                    </div>
+                    <div class="scard_footer d-flex align-items-center">
+                      <p class="scard_price m-0">$5,315 <span>/ mo.</span></p>
+                      <div class="scard_add ms-4">
+                        <input type="checkbox" />
+                        <div class="scard_add-img"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-none d-lg-block col-4">
+              <div class="checkout">
+                <div
+                  class="
+                    checkout_title
+                    d-flex
+                    align-items-center
+                    justify-content-between
+                    mb-3
+                  "
+                >
+                  <p class="checkout_title-text mb-0">You have selected:</p>
+                  <div class="checkout_promo input-group">
+                    <span
+                      class="input-group-text material-icons-outlined md-20"
+                    >
+                      local_play
+                    </span>
+                    <input
+                      type="text"
+                      class="form-control border-start-0"
+                      name="promo"
+                      id="promo"
+                    />
+                  </div>
+                </div>
+                <div class="checkout_list mb-3 pt-4 px-3">
+                  <!-- <div
+                    class="
+                      checkout_no-items
+                      d-flex
+                      align-items-center
+                      justify-content-center
+                      flex-column
+                      w-100
+                      h-100
+                    "
+                  >
+                    <span class="material-icons-outlined md-60">
+                      shopping_cart
+                    </span>
+                    <p>No items added yet</p>
+                  </div> -->
+                  <ul class="checkout_list-items p-0">
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Awareness Training - Unlimited (Requires an existing
+                          LMS)
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $135,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Member Self-Service
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $5,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">Mobile App</p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $1,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Awareness Training - Unlimited (Requires an existing
+                          LMS)
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $135,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Member Self-Service
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $5,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">Mobile App</p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $1,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Awareness Training - Unlimited (Requires an existing
+                          LMS)
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $135,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Member Self-Service
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $5,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">Mobile App</p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $1,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Awareness Training - Unlimited (Requires an existing
+                          LMS)
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $135,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">
+                          Member Self-Service
+                        </p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $5,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                    <li class="checkout_item mb-4">
+                      <span
+                        class="
+                          checkout_item-remove
+                          material-icons-outlined
+                          md-16
+                        "
+                      >
+                        close
+                      </span>
+                      <div
+                        class="
+                          checkout_item-info
+                          ps-4
+                          d-flex
+                          justify-content-between
+                        "
+                      >
+                        <p class="checkout_item-text mb-0">Mobile App</p>
+                        <p class="checkout_item-price mb-0 text-end">
+                          $1,315 <span class="d-block">/ mo.</span>
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="checkout_total">
+                  <div
+                    class="
+                      checkout_total-sum
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      mb-3
+                    "
+                  >
+                    <p class="mb-0">Total:</p>
+                    <p class="mb-0">$<span>0</span></p>
+                  </div>
+                  <div
+                    class="
+                      checkout_total-info
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      mb-3
+                    "
+                  >
+                    <p class="checkout_total-payday mb-0">
+                      <span>Pay on </span>May 23, 2020
+                    </p>
+                    <p
+                      class="
+                        checkout_total-discount
+                        d-flex
+                        align-items-center
+                        mb-0
+                      "
+                    >
+                      <span class="material-icons-outlined md-16 me-1">
+                        local_play
+                      </span>
+
+                      <span class="checkout_total_discount-amount">10%</span>
+                      discount included
+                    </p>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="checkout_btn btn btn-blue d-block w-100"
+                >
+                  Checkout
+                </button>
+                <p class="checkout_login text-center mt-3">
+                  <a href="#">Log in</a> to upgrade or add to your existing
+                  subscription.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section services end -->
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
